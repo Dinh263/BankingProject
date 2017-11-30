@@ -69,7 +69,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jButton2" max="32767" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButton1" min="-2" pref="125" max="-2" attributes="0"/>
+                                      <Component id="btnNewAccount" min="-2" pref="125" max="-2" attributes="0"/>
                                       <EmptySpace pref="56" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -118,7 +118,7 @@
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButton1" linkSize="4" min="-2" max="-2" attributes="0"/>
+                      <Component id="btnNewAccount" linkSize="4" min="-2" max="-2" attributes="0"/>
                       <Component id="jButton2" linkSize="4" alignment="0" min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -187,7 +187,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="btnNewAccount">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="14" style="0"/>
@@ -197,6 +197,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="New Account"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnNewAccountActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
