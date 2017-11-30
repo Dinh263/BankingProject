@@ -1,4 +1,7 @@
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import javax.swing.UIManager;
 
 /*
@@ -13,11 +16,16 @@ import javax.swing.UIManager;
  */
 public class Loading extends javax.swing.JFrame {
 
+    Connection conn;
+    ResultSet rs;
+    PreparedStatement pst;
     /**
      * Creates new form Loading
      */
     public Loading() {
+        super("Loading");
         initComponents();
+        conn = javaConnection.ConnectionDB();
     }
 
     /**

@@ -1,3 +1,8 @@
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,12 +14,19 @@
  * @author DinhN
  */
 public class Account extends javax.swing.JFrame {
+    
+    Connection conn;
+    ResultSet rs;
+    PreparedStatement pst;
+    
 
     /**
      * Creates new form Account
      */
     public Account() {
+        super("create account");
         initComponents();
+        conn = javaConnection.ConnectionDB();
     }
 
     /**
